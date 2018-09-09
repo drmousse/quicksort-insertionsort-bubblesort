@@ -3,9 +3,10 @@ import random
 testList = []
 size = 20
 maxNumber = 100
+minNumber= -100
 
 for i in range(0, size):
-    testList.append(random.randint(0, maxNumber))
+    testList.append(random.randint(minNumber, maxNumber))
 
 def quicksort(liste):
 
