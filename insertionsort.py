@@ -13,15 +13,15 @@ def insertionsort(liste):
     n = len(liste)
 
     for i in range(1, n):
-        valuetosort = liste[i]
+        sortValue = liste[i]
         k = i
 
-        while k > 0 and valuetosort < liste[k - 1]:
+        while k > 0 and sortValue < liste[k - 1]:
             liste[k] = liste[k - 1]
             k -=1
-        liste[k] = valuetosort
+        liste[k] = sortValue
 
     return liste
 
-print(testList)
-print(insertionsort(testList))
+print("Unsorted list:\n" + str(testList) + "\n")
+print("Insertion sorted list:\n" + str(insertionsort(testList)))
