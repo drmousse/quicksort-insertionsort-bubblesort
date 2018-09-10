@@ -37,5 +37,5 @@ def quicksort(liste):
 
     return quicksort(liste[:left]) + quicksort(liste[left:])
 
-print("Unordered list: \n" + str(testList) + "\n")
+print("Unsorted list: \n" + str(testList) + "\n")
 print("List after Quick Sort Algorithm: \n" + str(quicksort(testList)))
