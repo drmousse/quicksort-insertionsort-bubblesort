@@ -23,10 +23,5 @@ def insertionsort(liste):
 
     return liste
 
-<<<<<<< HEAD
 print("Unsorted list:\n" + str(testList) + "\n")
 print("Insertion sorted list:\n" + str(insertionsort(testList)))
-=======
-print(testList)
-print(insertionsort(testList))
->>>>>>> a67dec4e0a3d96cfc842c3adc06ec6992b6d1a19
