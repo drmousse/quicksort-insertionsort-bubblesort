@@ -27,13 +27,9 @@ def quicksort(liste):
         if right < left:
             cond = False
         else:
-            temp = liste[left]
-            liste[left] = liste[right]
-            liste[right] = temp
+            liste[left], liste[right] = liste[right], liste[left]
 
-    temp = liste[left]
-    liste[left] = liste[pivot]
-    liste[pivot] = temp
+    liste[left], liste[pivot] = liste[pivot], liste[left]
 
     return quicksort(liste[:left]) + quicksort(liste[left:])
 
