@@ -15,9 +15,7 @@ def bubblesort(liste):
     while n > 0:
         for i in range(0, n - 1):
             if liste[i] > liste[i + 1]:
-                temp = liste[i]
-                liste[i] = liste[i + 1]
-                liste[i + 1] = temp
+                liste[i], liste[i + 1] = liste[i + 1], liste[i]
         n -= 1
 
     return liste
