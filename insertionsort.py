@@ -18,7 +18,7 @@ def insertionsort(liste):
 
         while k > 0 and sortValue < liste[k - 1]:
             liste[k] = liste[k - 1]
-            k -=1
+            k -= 1
         liste[k] = sortValue
     return liste
 
