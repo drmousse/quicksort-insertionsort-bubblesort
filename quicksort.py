@@ -8,8 +8,8 @@ minNumber = -100
 for i in range(0, size):
     testList.append(random.randint(minNumber, maxNumber))
 
-def quicksort(liste):
 
+def quicksort(liste):
     if len(liste) <= 1:
         return liste
 
@@ -28,10 +28,9 @@ def quicksort(liste):
             cond = False
         else:
             liste[left], liste[right] = liste[right], liste[left]
-
     liste[left], liste[pivot] = liste[pivot], liste[left]
-
     return quicksort(liste[:left]) + quicksort(liste[left:])
+
 
 print("Unsorted list: \n" + str(testList) + "\n")
 print("List after Quick Sort Algorithm: \n" + str(quicksort(testList)))
